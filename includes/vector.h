@@ -6,7 +6,7 @@
 /*   By: amartino <amartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 15:25:09 by amartino          #+#    #+#             */
-/*   Updated: 2020/05/19 11:07:14 by francis          ###   ########.fr       */
+/*   Updated: 2020/06/24 14:26:58 by amartinod        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,10 +163,7 @@ t_vector		*ft_ftoa(double value, uint64_t precision, uint32_t option);
 t_vector		*ft_fldtoa(long double val, uint64_t preci, uint32_t opt);
 
 /*
-** vct_print
 ** vct_trim
-** vct_split
 ** vct_splitchr
-** vct_read_line
 */
 #endif
