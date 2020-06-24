@@ -6,7 +6,7 @@
 /*   By: amartino <amartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 15:25:09 by amartino          #+#    #+#             */
-/*   Updated: 2020/06/24 14:26:58 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/06/24 17:13:41 by amartinod        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,6 @@ void			vct_del_tab(t_vector ***vct_tab);
 void			vct_del_tab_content(t_vector **vct_tab);
 char			*vct_getstr(t_vector *vector);
 char			vct_getchar_at(t_vector *vector, size_t index);
-void			vct_print(t_vector *vector);
-void			vct_print_nl(t_vector *vector);
-void			vct_print_tab(t_vector **vector);
 int8_t			vct_read_line(const int fd, t_vector **line);
 int8_t			vct_read_line_for_push_swap(const int fd, t_vector **line);
 t_vector		**vct_split(t_vector *input, char c);
@@ -146,6 +143,17 @@ ssize_t			vct_chr_str(t_vector *vector, char *find);
 size_t			vct_chr_str_count(t_vector *vector, char *find);
 ssize_t			vct_replace_char(t_vector *vector, char c, char replace);
 ssize_t			vct_replace_str(t_vector *vector, char *str, char *replace);
+
+/*
+**********************
+**  	PRINT	    **
+**********************
+*/
+ssize_t			vct_print(t_vector *vector);
+ssize_t			vct_dprint(int fd, t_vector *vector);
+ssize_t			vct_dprint_debug(int fd, t_vector *vector);
+ssize_t			vct_print_nl(t_vector *vector);
+void			vct_print_tab(t_vector **vector);
 
 /*
 **********************
