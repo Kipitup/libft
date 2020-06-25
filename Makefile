@@ -6,7 +6,7 @@
 #    By: fkante <fkante@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/19 17:11:38 by fkante            #+#    #+#              #
-#    Updated: 2020/06/24 17:16:16 by amartinod        ###   ########.fr        #
+#    Updated: 2020/06/25 09:58:03 by amartinod        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -208,6 +208,7 @@ SRCS += vct_addnb.c
 SRCS += vct_chr_count.c
 SRCS += vct_chr_str_count.c
 SRCS += vct_read_line.c
+SRCS += vct_get_file.c
 SRCS +=	vct_read_line_for_push_swap.c
 SRCS += vct_strequ.c
 SRCS += vct_strnequ.c

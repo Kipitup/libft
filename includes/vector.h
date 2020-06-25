@@ -6,7 +6,7 @@
 /*   By: amartino <amartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 15:25:09 by amartino          #+#    #+#             */
-/*   Updated: 2020/06/24 17:13:41 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/06/25 09:57:34 by amartinod        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ void			vct_del_tab_content(t_vector **vct_tab);
 char			*vct_getstr(t_vector *vector);
 char			vct_getchar_at(t_vector *vector, size_t index);
 int8_t			vct_read_line(const int fd, t_vector **line);
+t_vector		*vct_get_file(char *file_name);
 int8_t			vct_read_line_for_push_swap(const int fd, t_vector **line);
 t_vector		**vct_split(t_vector *input, char c);
 
