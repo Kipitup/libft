@@ -6,7 +6,7 @@
 /*   By: fkante <fkante@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/20 12:58:24 by fkante            #+#    #+#             */
-/*   Updated: 2020/06/09 14:46:24 by amartino         ###   ########.fr       */
+/*   Updated: 2020/06/25 15:52:29 by amartinod        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@
 # define STD_ERR				STDERR_FILENO
 # define INTMIN_LEN				11
 # define INTMAX_LEN				10
-# define DEBUG					OFF
+# define DEBUG					ON
 # define OPEN					0
 # define CLOSED					1
 
