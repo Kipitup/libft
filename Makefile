@@ -6,7 +6,7 @@
 #    By: fkante <fkante@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/19 17:11:38 by fkante            #+#    #+#              #
-#    Updated: 2020/06/25 09:58:03 by amartinod        ###   ########.fr        #
+#    Updated: 2020/06/26 14:31:19 by amartinod        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -145,6 +145,7 @@ SRCS += ft_log2_n.c
 SRCS += ft_check_int_len.c
 SRCS += ft_is_prime.c
 SRCS += ft_find_next_prime.c
+SRCS += ft_is_str_a_number.c
 
 #------------------------------------ CHAR ------------------------------------#
 SRCS += ft_isprint.c

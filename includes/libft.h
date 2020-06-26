@@ -6,7 +6,7 @@
 /*   By: fkante <fkante@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/20 12:58:24 by fkante            #+#    #+#             */
-/*   Updated: 2020/06/25 15:52:29 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/06/26 14:32:43 by amartinod        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,6 +145,7 @@ char				*ft_strchr_str(const char *str, char *find);
 char				*ft_strndup(const char *src, size_t size);
 int					get_next_line(const int fd, char **line);
 int8_t				ft_check_int_len(char *str);
+uint8_t				ft_is_str_a_number(char *nb_str);
 
 /*
 ** ############################################################################
