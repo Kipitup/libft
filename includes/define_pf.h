@@ -6,7 +6,7 @@
 /*   By: amartino <amartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 14:13:45 by amartino          #+#    #+#             */
-/*   Updated: 2020/05/21 19:09:34 by francis          ###   ########.fr       */
+/*   Updated: 2020/07/16 20:20:14 by francis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,6 @@
 # define J					"j"
 # define Z					"z"
 # define R					"r"
-# define B					"b"
 
 # define FLAG_HH			0x00000001
 # define FLAG_LL			0x00000002
