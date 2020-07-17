@@ -11,14 +11,25 @@ echo "\n\033[1;33mHere are all the files that match your pattern:\033[0m"
 
 for f in $(grep -r "$var1" . | cut -d ":" -f1 | egrep  "(\.h)|(\.c)")
 	do echo "\033[1;37m$f\033[0m"
-done 
+done
 
-read -p $'\nReplace ?  \033[1;32myes\033[0m  |  \033[1;31mno\033[0m\n' var3
+
+read -p $'\nDo you want more detail ?  \033[1;32myes\033[0m  |  \033[1;31mno\033[0m\n' var3
 
 echo "\n-----------------------------------------------\n"
 
 if [ $var3 = "yes" ] || \
 	[ $var3 = "y" ]
+then
+	find . -name "*.c" -exec grep "$var1" {} \;
+fi
+
+read -p $'\nReplace ?  \033[1;32myes\033[0m  |  \033[1;31mno\033[0m\n' var4
+
+echo "\n-----------------------------------------------\n"
+
+if [ $var4 = "yes" ] || \
+	[ $var4 = "y" ]
 then
 	for f in $(grep -r "$var1" . | cut -d ":" -f1 | egrep  "(\.h)|(\.c)")
 		do sed -i '' "s~$var1~$var2~g" $f
