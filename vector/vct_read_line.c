@@ -6,7 +6,7 @@
 /*   By: amartino <amartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 15:08:41 by amartino          #+#    #+#             */
-/*   Updated: 2020/06/24 17:20:35 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/07/18 18:54:32 by ffoissey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int8_t	parse_line(t_vector *vector, t_vector **line, uint8_t the_end)
 	}
 	else if (the_end == TRUE)
 	{
-		ret = TRUE;
+		ret = 2;
 		*line = vct_dup(vector);
 		if (*line == NULL)
 			ret = FAILURE;
