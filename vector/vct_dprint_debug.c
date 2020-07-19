@@ -6,7 +6,7 @@
 /*   By: amartinod <a.martino@sutdent.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 17:45:30 by amartinod         #+#    #+#             */
-/*   Updated: 2020/06/24 17:18:02 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/07/19 09:21:15 by fkante           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 **	the number of byte written for the vector only not the debug or FAILURE
 **	if an error occur.
 */
+
 ssize_t		vct_dprint_debug(int fd, t_vector *vector)
 {
 	ssize_t		ret;

@@ -6,7 +6,7 @@
 /*   By: amartinod <a.martino@sutdent.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 17:36:57 by amartinod         #+#    #+#             */
-/*   Updated: 2020/04/03 17:42:17 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/07/19 09:21:01 by fkante           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 **	Print the vector on the given fd. Return the number of byte written or
 **	FAILURE if an error occur.
 */
+
 ssize_t		vct_dprint(int fd, t_vector *vector)
 {
 	ssize_t		ret;

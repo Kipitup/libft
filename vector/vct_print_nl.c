@@ -6,7 +6,7 @@
 /*   By: amartino <amartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 15:00:45 by amartino          #+#    #+#             */
-/*   Updated: 2020/04/03 17:52:03 by amartinod        ###   ########.fr       */
+/*   Updated: 2020/07/19 09:20:00 by fkante           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 **	Print the vector and a new line. Return the number of byte written for the
 **	vector only, without the new line or FAILURE if an error occur.
 */
+
 ssize_t		vct_print_nl(t_vector *vector)
 {
 	ssize_t		ret;
