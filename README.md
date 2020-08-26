@@ -10,10 +10,11 @@ sa librairie comme bon lui semble.*
 | Part 1 | Data Structures |
 | Part 2 | String vector |
 | Part 3 | ft_printf, get_next_line |
-| Part 4 | LibC functions|
-| Part 5 | Other utilitaries functions |
+| Part 4 | LibC functions |
+| Part 5 | Other utility functions |
 
 ## Part 1 - Data structures
+
 
 ### Red-black Tree
 
@@ -100,10 +101,12 @@ You'll need to go in the del_function.c file and add the appropriate del
 function. Then, when calling darray_clear_content or darray_clear_destroy
 pass the del function you created.
 
-- 'max' is the number of block initially malloc
-- 'end' is index that define the last assigned element
-- 'sizeof_elem' is the byte' size of each element in content
-- 'expand_rate' when end >= max, then we expand the array by the expand_rate
+1. 'max' is the number of block initially malloc
+2. 'end' is index that define the last assigned element
+3. 'sizeof_elem' is the byte' size of each element in content
+4. 'expand_rate' when end >= max, then we expand the array by the expand_rate
+
+Structure:
 
 	typedef struct	s_darray
 	{
@@ -116,7 +119,6 @@ pass the del function you created.
 
 ### Adjacency list (graph)
 
-ADJACENCY LIST
 An array of lists is used. Size of the array is equal to the number of
 vertices (vertices are coonected by edges). Let the array be array[].
 An entry array[i] represents the list of vertices adjacent (has an edge) to
@@ -149,6 +151,8 @@ graph. The weights of edges can be represented as lists of pairs.
 
 ### Linked list
 
+Classic linked list structure
+
 	typedef struct		s_list
 	{
 		void			*content;
@@ -156,34 +160,6 @@ graph. The weights of edges can be represented as lists of pairs.
 		struct s_list	*next;
 	}					t_list;
 
-#### ft_lstnew
-> Alloue (avec malloc(3)) et retourne un maillon “frais”. Les
-> champs content et content_size du nouveau maillon sont initialisés par
-> copie des paramètres de la fonction. Si le paramètre content est nul,
-> le champs content est initialisé à NULL et le champs content_size est
-> initialisé à 0 quelque soit la valeur du paramètre content_size. Le champ next
-> est initialisé à NULL. Si l’allocation échoue, la fonction renvoie NULL.
-#### ft_lstdelone
-> Prend en paramètre l’adresse d’un pointeur sur un maillon et
-> libère la mémoire du contenu de ce maillon avec la fonction
-> del passée en paramètre puis libère la mémoire du maillon
-> en lui même avec free(3). La mémoire du champ next ne
-> doit en aucun cas être libérée. Pour terminer, le pointeur sur
-> le maillon maintenant libéré doit être mis à NULL (de manière
-> similaire à la fonction ft_memdel de la partie obligatoire).
-#### ft_lstdel
-> Prend en paramètre l’adresse d’un pointeur sur un maillon et libère la mémoire
-> de ce maillon et celle de tous ses successeurs l’un après l’autre avec del et free(3).
-> Pour terminer, le pointeur sur le premier maillon maintenant libéré doit être
-> mis à NULL (de manière similaire à la fonction ft_memdel de la partie obligatoire).
-#### ft_lstadd
-> Ajoute l’élément new en tête de la liste.
-#### ft_lstiter
-> Parcourt la liste lst en appliquant à chaque maillon la fonction f.
-#### ft_lstmap
-> Parcourt la liste lst en appliquant à chaque maillon la fonction f et crée
-> une nouvelle liste “fraiche” avec malloc(3) résultant des applications successives.
-> Si une allocation échoue, la fonction renvoie NULL.
 
 ## Part 2
 ### #String Vectors (Amartino/Fkante)
@@ -195,7 +171,7 @@ Ils sont definis par la structure suivante:
     typedef struct	s_vector
     {
 	      char      *str;
-          size_t    len;
+	      size_t    len;
 	      size_t    size;
 	      size_t    scale;
     }               t_vector;
