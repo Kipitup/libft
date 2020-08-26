@@ -1,6 +1,7 @@
 # Libft
-*Ce projet a pour but de reimplementer C une bibliotheque de fonctions
-de la librairie C standard, ainsi que d'autres fonctions utilitaires.*
+*Ce projet a pour but de réimplementer un certain nombre de fonctions de la librairie C standard,
+ainsi que d'autres fonctions utilitaires. Par la suite, chaque étudiant complète
+sa librairie comme bon lui semble.*
 
 ### Overview
 
